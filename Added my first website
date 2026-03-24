@@ -6,6 +6,8 @@
     <style>
         body {
             background-color: rgb(195, 228, 240);
+            text-align: center;
+            font-family: Arial;
         }
 
         h1 {
@@ -23,12 +25,26 @@
         .highlight {
             color: green;
         }
+
+        button {
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: black;
+        }
     </style>
 
 </head>
 <body>
 
-    <h1>Hello, I'm Riddhi Chauhan👍🏻</h1>
+    <h1>Hello, I'm Riddhi Chauhan 👍🏻</h1>
 
     <h2>I just started my coding journey 🚀</h2>
 
@@ -37,6 +53,8 @@
     <p class="highlight">My goal is to become a Web Developer 💻</p>
 
     <p>This is my first website hosted on GitHub.</p>
+
+    <button>Contact Me</button>
 
 </body>
 </html>
