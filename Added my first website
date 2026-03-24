@@ -3,15 +3,15 @@
 <head>
     <title>My First Website</title>
 </head>
-<body>
+<body style="background-color: rgb(195, 228, 240);">
 
-    <h1>Hello, I'm Riddhi Chauhan 👋</h1>
+    <h1 style="color: maroon;">Hello, I'm Riddhi Chauhan👍🏻</h1>
 
-    <p>I am a BSc Computer Science Student.</p>
+    <h2 style="color: blue;">I just started my coding journey 🚀</h2>
 
-    <p>My goal is to become a Web Developer 💻</p>
+    <p style="color: black;">I am a BSc Computer Science student.</p>
 
-    <h2>I just started coding 🚀</h2>
+    <p style="color: purple;">My goal is to become a Web Developer 💻</p>
 
     <p>This is my first website hosted on GitHub.</p>
 
