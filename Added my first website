@@ -6,27 +6,30 @@
 <title>Riddhi Chauhan | Portfolio</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to right, #d9f3e9, #eaf8f3);
+    font-family:'Times New Roman', Times, serif;
+    background:linear-gradient(to right, #d8f7e8, #eefcf6);
     color:#222;
     line-height:1.6;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav{
-    background-color: maroon;
-    color:white;
-    padding:15px;
+    background:linear-gradient(to right, maroon, purple);
+    padding:18px;
     text-align:center;
     position:sticky;
     top:0;
+    z-index:1000;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
 nav a{
@@ -34,9 +37,15 @@ nav a{
     text-decoration:none;
     margin:0 15px;
     font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-/* Hero Section */
+nav a:hover{
+    color:#d8f7e8;
+}
+
+/* HERO */
 header{
     min-height:100vh;
     display:flex;
@@ -44,110 +53,155 @@ header{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:30px;
+    padding:40px;
 }
 
 header h1{
-    font-size:50px;
-    color:maroon;
-}
-
-header h2{
-    color:rgb(9, 20, 117);
-    margin-top:10px;
-}
-
-header p{
-    max-width:700px;
-    margin-top:15px;
-    font-size:20px;
-}
-
-button{
-    background-color:maroon;
-    color:white;
-    border:none;
-    padding:12px 22px;
-    margin:10px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-button:hover{
-    background-color:black;
-}
-
-/* Sections */
-section{
-    min-height:100vh;
-    padding:60px 40px;
-}
-
-section h2{
-    text-align:center;
-    font-size:38px;
-    color:rgb(9, 20, 117);
-    margin-bottom:30px;
-}
-
-/* Cards */
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.card{
-    background:white;
-    width:320px;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-}
-
-.card h3{
+    font-size:55px;
     color:maroon;
     margin-bottom:10px;
 }
 
-/* Table */
+header h2{
+    color:rgb(11, 32, 133);
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:750px;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+/* BUTTONS */
+button{
+    background:linear-gradient(to right, maroon, purple);
+    color:white;
+    border:none;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:black;
+}
+
+/* SECTION */
+section{
+    min-height:100vh;
+    padding:70px 40px;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    color:rgb(11, 32, 133);
+    margin-bottom:35px;
+}
+
+/* CARD CONTAINER */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:maroon;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+/* TABLE */
 table{
-    width:80%;
+    width:85%;
     margin:auto;
     border-collapse:collapse;
     background:white;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-}
-
-table, th, td{
-    border:1px solid #ddd;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    border-radius:15px;
+    overflow:hidden;
 }
 
 th{
-    background:maroon;
+    background:linear-gradient(to right, maroon, purple);
     color:white;
 }
 
 th, td{
-    padding:15px;
+    padding:18px;
     text-align:center;
+    border:1px solid #ddd;
+    font-size:18px;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
-    background:maroon;
+    background:linear-gradient(to right, maroon, purple);
     color:white;
     text-align:center;
-    padding:20px;
+    padding:22px;
+    font-size:18px;
 }
+
+/* MOBILE */
+@media(max-width:768px){
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.card{
+    width:100%;
+}
+
+table{
+    width:100%;
+    font-size:14px;
+}
+
+th,td{
+    padding:10px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav>
 <a href="#about">About</a>
 <a href="#education">Education</a>
@@ -156,52 +210,60 @@ footer{
 <a href="#achievements">Achievements</a>
 </nav>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <header>
+
 <h1>Hello, I'm Riddhi Chauhan 👋</h1>
 <h2>BSc Computer Science Student 🚀</h2>
+
 <p>
-Passionate about technology, creativity, and continuous growth.  
+Passionate about technology, creativity, and continuous growth.
 Currently learning Web Development, JavaScript, Python, and building projects to become industry-ready.
 </p>
 
 <button onclick="openLinkedIn()">💼 LinkedIn</button>
 <button onclick="openGitHub()">💻 GitHub</button>
+
 </header>
 
-<!-- About -->
+<!-- ABOUT -->
 <section id="about">
+
 <h2>About Me 👑</h2>
 
 <div class="container">
+
 <div class="card">
 <h3>Who I Am</h3>
 <p>
-I am a Third Year BSc Computer Science student with strong academics and passion for learning new technologies.
+I am a Third Year BSc Computer Science student with excellent academics and passion for technology.
 </p>
 </div>
 
 <div class="card">
 <h3>My Goal</h3>
 <p>
-To become a skilled developer, build impactful projects, gain internships, and grow in the tech industry.
+To become a skilled developer, gain internships, and build impactful real-world projects.
 </p>
 </div>
 
 <div class="card">
 <h3>My Personality</h3>
 <p>
-Disciplined through Karate, leadership through NSS, and consistent through academics.
+Disciplined through Karate, leadership through NSS, and consistency through academics.
 </p>
 </div>
+
 </div>
 </section>
 
-<!-- Education -->
+<!-- EDUCATION -->
 <section id="education">
+
 <h2>Education 📚</h2>
 
 <table>
+
 <tr>
 <th>Course</th>
 <th>Institute</th>
@@ -232,10 +294,12 @@ Sem 4 - 9.86 CGPA
 </tr>
 
 </table>
+
 </section>
 
-<!-- Skills -->
+<!-- SKILLS -->
 <section id="skills">
+
 <h2>Skills 💻</h2>
 
 <div class="container">
@@ -261,10 +325,12 @@ Sem 4 - 9.86 CGPA
 </div>
 
 </div>
+
 </section>
 
-<!-- Certifications -->
+<!-- CERTIFICATIONS -->
 <section id="certifications">
+
 <h2>Certifications 📜</h2>
 
 <div class="container">
@@ -280,10 +346,12 @@ Sem 4 - 9.86 CGPA
 </div>
 
 </div>
+
 </section>
 
-<!-- Achievements -->
+<!-- ACHIEVEMENTS -->
 <section id="achievements">
+
 <h2>Achievements 🏆</h2>
 
 <div class="container">
@@ -312,14 +380,16 @@ Participant - Aavishkar Research Convention, University of Mumbai
 </div>
 
 </div>
+
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-<p>Made with dedication by Riddhi Chauhan 💚</p>
+Made with dedication by Riddhi Chauhan 💚
 </footer>
 
 <script>
+
 function openLinkedIn(){
 window.open("https://www.linkedin.com/in/riddhi-chauhan-8a247a3b7","_blank");
 }
@@ -327,6 +397,7 @@ window.open("https://www.linkedin.com/in/riddhi-chauhan-8a247a3b7","_blank");
 function openGitHub(){
 window.open("https://github.com/RiddhiChauhan-18","_blank");
 }
+
 </script>
 
 </body>
